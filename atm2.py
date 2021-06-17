@@ -23,21 +23,21 @@ while chances >= 0:
                     print('Thank You')
                     break
             elif option == 2:
-                option2 = ('y')
+                option2 = 'y'
                 withdrawl = float(input('How Much Would you like to withdraw? 10,20,40,60,80,100 for other enter 1: '))
-    if withdrawl in [10,20,40,60,100]:
+                if withdrawl in [10,20,40,60,100]:
                        balance = balance - withdrawl
                        print('\nYour Balance is now Rs',balance)
                        restart = input('Would You like to go back? ')
                        if restart in ('n', 'No', 'no', 'N'):
                            print('Thank You')
                            break
-                  elif withdrawl != [10,20,40,60,100]:
-                      print('Invalid Amount, PLease Re-try\n')
-                      restart = ('y')
-                  elif withdrawl == 1:
-                      withdrawl = float(input('Please Enter Desired Amount: '))
-             elif option == 3:
+                       elif withdrawl != [10,20,40,60,100]:
+                        print('Invalid Amount, PLease Re-try\n')
+                        restart = 'y'
+                       elif withdrawl == 1:
+                        withdrawl = float(input('Please Enter Desired Amount: '))
+            elif option == 3:
                  Pay_in = float(input('How Much Would You Like To Pay In? '))
                  balance = balance + Pay_in
                  print('\nYou Balance is now Rs',balance)
@@ -45,11 +45,11 @@ while chances >= 0:
                  if restart in ('n', 'No', 'no', 'N'):
                      print('Thank You')
                      break
-             elif option == 4:
+            elif option == 4:
                  print('Please wait while your card is returned......\n')
                  print('Thank You for you service')
                  break
-             else:
+            else:
                  print('Please Enter a correct number. \n')
                  restart = ('y')
     elif pin != ('1234'):
