@@ -4,7 +4,7 @@ chances = 3
 balance = 999.12
 while chances >= 0:
     pin = int(input('Please Enter You 4 Digit Pin : '))
-    if pin == (1234):
+    if pin == (6569):
         print('You Entered You Pin Correctly')
         print('Please Press 1 For Your Balance')
         print('Please Press 2 To make A Withdrawl')
